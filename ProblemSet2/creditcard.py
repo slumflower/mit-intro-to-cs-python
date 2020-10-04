@@ -7,8 +7,7 @@ Created on Sun Feb 24 13:51:59 2019
 """
 
 
-#Write a program to calculate the credit card balance after one year if a person only pays the minimum monthly payment required by the credit card company each month.
-
+#Write a program to calculate the credit card balance after one year if a person only pays the minimum monthly payment each month.
 
 
 
@@ -17,22 +16,6 @@ Created on Sun Feb 24 13:51:59 2019
 #monthlyPaymentRate - minimum monthly payment rate as a decimal
  
 
-def remain(balance, annualInterestRate, monthlyPaymentRate, months):  
-   if months == 1:
-       return (balance - monthlyPaymentRate*balance) + (annualInterestRate/12)*(balance - monthlyPaymentRate*balance)
-   else:
-       return remain((balance - monthlyPaymentRate*balance) + (annualInterestRate/12)*(balance - monthlyPaymentRate*balance), annualInterestRate, monthlyPaymentRate, months-1)
-    
-    
-print(remain(42, 0.2, 0.04, 12))
-
-def remain(balance, annualInterestRate, monthlyPaymentRate, months):  
-   if months == 1:
-       return (round((balance - monthlyPaymentRate*balance) + (annualInterestRate/12)*(balance - monthlyPaymentRate*balance),2))
-   else:
-       return remain((balance - monthlyPaymentRate*balance) + (annualInterestRate/12)*(balance - monthlyPaymentRate*balance), annualInterestRate, monthlyPaymentRate, months-1)
-
-print(remain(42, 0.2, 0.04, 12))
 
 
 
@@ -50,6 +33,8 @@ for i in range (12):
 print(round(balance, 2))
 
 
+
+#alternative solution
 
 monthlyInterest = annualInterestRate/12
 fixedPayment = 10
