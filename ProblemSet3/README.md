@@ -4,6 +4,6 @@ For this problem, you will implement a variation of the classic wordgame Hangman
 
 In this problem, you will implement a function, called hangman, that will start up and carry out an interactive Hangman game between a player and the computer.
 
-<pre>
-This was a very large problem with extra files. The course provided helper functions to get going, along with code files and wordlist. These things are not included. Only the solutions I provided.
-</pre>
+
+>This was a very large problem with extra files. The course provided helper functions to get going, along with code files and wordlist. These things are not included. Only the solutions I provided.
+
