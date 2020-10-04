@@ -6,8 +6,10 @@ Created on Sun Feb 24 19:33:04 2019
 @author: portiajohnson
 """
 
-balance = 3329
-annualInterestRate = 0.2
+
+# Write a program that uses bisection search to find the smallest monthly payment to the cent such that we can pay off the debt within a year. 
+
+
 
 epsilon = 0.01
 low = balance / 12
